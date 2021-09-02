@@ -16,10 +16,88 @@ h2 {
     font-size: 30px;
 }
 
+.section {
+    color: black;
+    font-family: Verdana sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
 .banner {
     height: 90vh;
     width: 100%;
     background-color: lightblue;
     text-align: center;
     line-height: 90vh;
+}
+
+.section-1 {
+    display: inline;
+    height: 90vh;
+    width: 100%;
+    /*display: table;*/
+    /*content: " ";*/
+    /*clear: both;*/
+}
+
+.circle {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 10px;
+    height: 40vh;
+    width: 20%;
+    border-radius: 100%;
+    background-color: darkgoldenrod;
+}
+
+.section-2 {
+    display: inline;
+}
+
+.main-content {
+    background-color: gray;
+    height: 90vh;
+    width: 45%;
+    float: left;
+    display: inline-block;
+    margin: 20px 20px 20px 10px;
+    text-align: center;
+    line-height: 90vh;
+
+}
+
+.article {
+    float: right;
+    text-align: center;
+    line-height: 20vh;
+    width: 45%;
+    margin: 20px 10px 20px 20px;
+    background-color: indianred;
+    height: 26vh;
+}
+
+.section-2::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.section-3 {
+    display: inline;
+}
+
+.rec {
+    display: inline-block;
+    background-color: orangered;
+    width: 22%;
+    height: 80vh;
+    margin: 10px 20px 0 20px;
+}
+
+.footer {
+    height: 10vh;
+    width: 100%;
+    background-color: rosybrown;
+    text-align: center;
+    line-height: 10vh;
 }
