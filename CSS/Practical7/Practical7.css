@@ -33,14 +33,14 @@ h2 {
     line-height: 90vh;
 }
 
-.section-1 {
-    display: inline;
-    height: 90vh;
-    width: 100%;
-    /*display: table;*/
-    /*content: " ";*/
-    /*clear: both;*/
-}
+/*.section-1 {*/
+/*    display: inline;*/
+/*    height: 90vh;*/
+/*    width: 100%;*/
+/*    !*display: table;*!*/
+/*    !*content: " ";*!*/
+/*    !*clear: both;*!*/
+/*}*/
 
 .circle {
     display: inline-block;
@@ -52,9 +52,9 @@ h2 {
     background-color: darkgoldenrod;
 }
 
-.section-2 {
-    display: inline;
-}
+/*.section-2 {*/
+/*    display: inline;*/
+/*}*/
 
 .main-content {
     background-color: gray;
@@ -78,15 +78,15 @@ h2 {
     height: 26vh;
 }
 
-.section-2::after {
-    display: block;
-    content: '';
-    clear: both;
-}
+/*.section-2::after {*/
+/*    display: block;*/
+/*    content: '';*/
+/*    clear: both;*/
+/*}*/
 
-.section-3 {
-    display: inline;
-}
+/*.section-3 {*/
+/*    display: inline;*/
+/*}*/
 
 .rec {
     display: inline-block;
