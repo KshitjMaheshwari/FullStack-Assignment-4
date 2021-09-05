@@ -52,14 +52,17 @@ body {
     color: white;
     font-size: 20px;
     /*text-align: center;*/
+    padding: 15px;
 }
 
-.header ul li:hover {
-    background-color: white;
-}
+/*.header ul li:hover {*/
+/*    background-color: white;*/
+/*}*/
 
 .header ul li a:hover {
     color: black;
+    background-color: white;
+    /*padding: 15px;*/
 }
 
 /*h2 {*/
