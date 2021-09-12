@@ -2,25 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment-8</title>
-    <link href="../CSS/Practical8/Practical8.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-9</title>
+    <link href="../CSS/Practical9/Practical9.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 </head>
 <body>
 <div class="header">
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-btn">
+        <i class="far fa-bars"></i>
+    </label>
     <ul>
         <li><a href="#">HOME</a></li>
         <li><a href="#about">ABOUT US</a></li>
         <li><a href="#team">TEAM</a></li>
         <li><a href="#tech">TECHNOLOGIES</a></li>
         <li><a href="#contact">CONTACT</a></li>
+        <label for="chk" class="hide-btn">
+            <i class="fas fa-times"></i>
+        </label>
     </ul>
 </div>
 <div class="banner">
     <h1>Practical-8</h1>
 </div>
-<h2 id="team" class="section">Team Members</h2>
-<!--<div class="section-1">-->
+<h2 class="section" id="team">Team Members</h2>
 <div class="circle">
     <img src="../images/Practical8/899048ab0cc455154006fdb9676964b3.jpg">
 </div>
@@ -33,9 +40,7 @@
 <div class="circle">
     <img src="../images/Practical8/194938.png">
 </div>
-<!--</div>-->
-<h2 id="about" class="section">About Us</h2>
-<!--<div class="section-2">-->
+<h2 class="section" id="about">About Us</h2>
 <div class="main-content">
     <h2>About Projects</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur doloribus, ea et eum fuga in omnis quis,
@@ -62,9 +67,7 @@
 <div class="article" id="bg3">
     <h2>Project-3</h2>
 </div>
-<!--</div>-->
-<h2 id="tech" class="section" style="clear: both; padding-top: 80px">Technologies Used</h2>
-<!--<div class="section-3">-->
+<h2 class="section" id="tech" style="clear: both; padding-top: 80px">Technologies Used</h2>
 <div class="rec">
     <div class="imageContainer">
         <img alt="Introduction to HTML" src="../images/Practical6/html.png">
@@ -126,10 +129,11 @@
         <a href="Practical5Bootstrap.html">Read More</a>
     </div>
 </div>
-<!--</div>-->
-<h2 id="contact" class="section" style="margin-top: 100px">Contact</h2>
+<h2 class="section" id="contact" style="margin-top: 100px">Contact</h2>
 <div class="footer">
-    <p style="padding-top: 30px">Website Template for Practical-8 &copy <a href="https://www.beta-labs.in/" style="text-decoration: none">Beta Labs</a></p>
+    <p style="padding-top: 30px">Website Template for Practical-8 &copy <a href="https://www.beta-labs.in/"
+                                                                           style="text-decoration: none">Beta Labs</a>
+    </p>
     <a href="#" style="text-decoration: none">Back to top</a>
 </div>
 </body>
