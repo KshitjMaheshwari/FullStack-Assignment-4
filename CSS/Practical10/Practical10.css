@@ -126,12 +126,12 @@ html {
     color: #fff;
 }
 
-#left-p>h2 {
+#left-p > h2 {
     text-align: left;
     margin: 10px 5px;
 }
 
-#left-p>p {
+#left-p > p {
     font-size: 20px;
     padding: 10px;
     text-align: justify;
@@ -194,17 +194,17 @@ html {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
-.grid>img {
+.grid > img {
     width: 100%;
     margin-bottom: 10px;
 }
 
-.grid>h4 {
+.grid > h4 {
     margin: 0px 10px;
     text-align: center;
 }
 
-.grid>p {
+.grid > p {
     margin: 10px;
     font-size: 15px;
     text-align: justify;
@@ -212,7 +212,7 @@ html {
     color: white;
 }
 
-.grid>a {
+.grid > a {
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -230,7 +230,7 @@ h1 {
     padding: 25px 0px;
 }
 
-.grid>a:hover {
+.grid > a:hover {
     background-color: blue;
 }
 
@@ -239,7 +239,7 @@ h1 {
     height: 100px;
 }
 
-#footer>p {
+#footer > p {
     font-size: 16px;
     color: black;
     text-align: center;
@@ -358,12 +358,12 @@ h1 {
         color: #fff;
     }
 
-    #left-p>h2 {
+    #left-p > h2 {
         text-align: left;
         margin: 10px 5px;
     }
 
-    #left-p>p {
+    #left-p > p {
         font-size: 20px;
         padding: 10px;
         text-align: justify;
@@ -427,18 +427,18 @@ h1 {
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
     }
 
-    .grid>img {
+    .grid > img {
         width: 100%;
         margin-bottom: 10px;
         padding: 20px;
     }
 
-    .grid>h4 {
+    .grid > h4 {
         margin: 0px 10px;
         text-align: center;
     }
 
-    .grid>p {
+    .grid > p {
         margin: 10px;
         font-size: 20px;
         text-align: justify;
@@ -446,7 +446,7 @@ h1 {
         color: white;
     }
 
-    .grid>a {
+    .grid > a {
         display: block;
         margin: 0 auto;
         text-align: center;
@@ -464,7 +464,7 @@ h1 {
         padding: 25px 0px;
     }
 
-    .grid>a:hover {
+    .grid > a:hover {
         background-color: blue;
     }
 
@@ -473,7 +473,7 @@ h1 {
         height: 100px;
     }
 
-    #footer>p {
+    #footer > p {
         font-size: 16px;
         color: black;
         text-align: center;
@@ -515,7 +515,7 @@ h1 {
         display: block;
     }
 
-    #chk:checked~.menu {
+    #chk:checked ~ .menu {
         right: 0;
     }
 
@@ -568,12 +568,12 @@ h1 {
         margin-bottom: 20px;
     }
 
-    #left-p>h2 {
+    #left-p > h2 {
         text-align: left;
         margin: 5px 5px;
     }
 
-    #left-p>p {
+    #left-p > p {
         font-size: 20px;
         padding: 10px;
         text-align: justify;
@@ -598,19 +598,19 @@ h1 {
     }
 
     #p1 {
-        background-image: url(https://imgur.com/JyMz0CR.jpg);
+        background-image: url(https://20o8nn37v3mzb7unq3fsj61e-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/Project-management-tools-bad.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     #p2 {
-        background-image: url(https://imgur.com/GFLWoXM.jpeg);
+        background-image: url(https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/project-managemnet-open-graph.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     #p3 {
-        background-image: url(https://imgur.com/uzmZqZA.jpg);
+        background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2020/06/best-project-management-platforms-featured-image-scaled.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -636,17 +636,17 @@ h1 {
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
     }
 
-    .grid>img {
+    .grid > img {
         width: 100%;
         margin-bottom: 10px;
     }
 
-    .grid>h4 {
+    .grid > h4 {
         margin: 0px 10px;
         text-align: center;
     }
 
-    .grid>p {
+    .grid > p {
         margin: 10px;
         font-size: 15px;
         text-align: justify;
@@ -654,7 +654,7 @@ h1 {
         color: white;
     }
 
-    .grid>a {
+    .grid > a {
         display: block;
         margin: 0 auto;
         text-align: center;
@@ -703,7 +703,7 @@ h1 {
             display: block;
         }
 
-        #chk:checked~.menu {
+        #chk:checked ~ .menu {
             right: 0;
         }
 
@@ -749,12 +749,12 @@ h1 {
             margin-bottom: 20px;
         }
 
-        #left-p>h2 {
+        #left-p > h2 {
             text-align: left;
             margin: 5px 5px;
         }
 
-        #left-p>p {
+        #left-p > p {
             font-size: 20px;
             padding: 10px;
             text-align: justify;
@@ -779,19 +779,19 @@ h1 {
         }
 
         #p1 {
-            background-image: url(https://imgur.com/JyMz0CR.jpg);
+            background-image: url(https://20o8nn37v3mzb7unq3fsj61e-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/Project-management-tools-bad.jpg);
             background-size: cover;
             background-repeat: no-repeat;
         }
 
         #p2 {
-            background-image: url(https://imgur.com/GFLWoXM.jpeg);
+            background-image: url(https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/project-managemnet-open-graph.jpg);
             background-size: cover;
             background-repeat: no-repeat;
         }
 
         #p3 {
-            background-image: url(https://imgur.com/uzmZqZA.jpg);
+            background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2020/06/best-project-management-platforms-featured-image-scaled.jpg);
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -811,18 +811,18 @@ h1 {
             max-height: 500px;
         }
 
-        .grid>img {
+        .grid > img {
             width: 100%;
             margin-bottom: 10px;
             padding: 20px;
         }
 
-        .grid>h4 {
+        .grid > h4 {
             margin: 0px 10px;
             text-align: center;
         }
 
-        .grid>p {
+        .grid > p {
             margin: 10px;
             font-size: 15px;
             text-align: justify;
@@ -830,7 +830,7 @@ h1 {
             color: white;
         }
 
-        .grid>a {
+        .grid > a {
             display: block;
             margin: 0 auto;
             text-align: center;
