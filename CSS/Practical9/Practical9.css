@@ -1,418 +1,851 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 html {
-    scroll-padding-top: 15vh;
+    scroll-padding-top: 70px;
     scroll-behavior: smooth;
-    font-family: sans-serif;
-    box-sizing: border-box;
 }
 
-.header {
-    /*margin: -8px -7px 0 -5px;*/
-    background-color: gray;
-    /*text-align: center;*/
-    position: sticky;
-    top: 0;
-    /*align-self: stretch;*/
-    /*justify-self: stretch;*/
-    /*width: auto;*/
-    /*min-width: 1270px;*/
-}
-
-.header ul {
-    display: inline-flex;
+#container {
     width: 100%;
-    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.header ul li {
+#header {
+    background-color: grey;
+    width: 100%;
+    height: 70px;
+    max-width: 1200px;
+    position: fixed;
+    top: 0;
+}
+
+/* Navigation Menu  */
+.menu {
     list-style: none;
-    padding: 15px;
+    float: right;
+    padding: 0 20px;
 }
 
-.header ul li a {
+.menu li {
+    display: inline-block;
+    line-height: 70px;
+}
+
+.menu li a {
+    transition: 0.4s;
+    display: block;
     text-decoration: none;
     color: white;
+    padding: 0 20px;
     font-size: 20px;
-    padding: 15px;
-    /*    overflow: hidden;*/
+    text-transform: uppercase;
 }
 
-.header ul li a:hover {
+.menu li a:hover {
     color: black;
     background-color: white;
 }
 
-.show-btn, .hide-btn {
+.show-btn,
+.hide-btn,
+#chk {
     font-size: 30px;
+    line-height: 70px;
     color: white;
     display: none;
-
+    float: right;
+    padding-right: 20px;
 }
 
-.show-btn {
-    position: absolute;
-    right: 0;
-    top: 25px;
-    transform: translateX(-25px);
-}
 
-#chk {
-    visibility: hidden;
-    z-index: -10;
-}
-
-.section {
-    color: black;
-    font-size: 40px;
-    text-align: center;
+#banner {
+    width: 100%;
     margin-top: 90px;
-}
-
-.banner {
-    height: 90vh;
-    margin-left: -4px;
-    background: url("https://cdn.pixabay.com/photo/2014/05/02/21/50/laptop-336378_960_720.jpg") no-repeat;
-    background-size: cover;
-}
-
-.banner h1 {
-    font-size: 70px;
+    height: 680px;
+    margin-bottom: 15px;
+    display: flex;
+    font-size: 40px;
     color: white;
-    margin: 20px 20px;
-    letter-spacing: 3px;
 }
 
-.circle {
-    display: inline-block;
-    margin-left: 70px;
-    margin-right: 10px;
-    height: 40vh;
-    border-radius: 100%;
-    background-color: lightgray;
+#banner {
+    background-image: url(https://cdn.pixabay.com/photo/2014/05/02/21/50/laptop-336378_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h2 {
+    margin: 20px 20px;
+    color: #fff;
+}
+
+
+#circle-container {
+    width: 100%;
+    margin: 15px auto;
+}
+
+#circle-container::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .circle img {
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-}
-
-.main-content {
-    background-color: gray;
-    height: 100vh;
-    width: 45%;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: goldenrod;
     float: left;
-    margin: 20px 20px 20px 10px;
-    padding: 10px;
-}
-
-.main-content h2 {
-    color: white;
-    text-align: center;
-}
-
-.main-content p {
-    color: white;
-    line-height: 1.2;
-    font-size: 20px;
-    word-spacing: 5px;
-    text-align: justify;
-}
-
-.article {
-    float: right;
-    width: 45%;
-    margin: 20px 10px 20px 20px;
-    background-color: indianred;
-    height: 30vh;
-    text-align: center;
-}
-
-.article h2 {
-    font-weight: 700;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
 }
 
-#bg1 {
-    background: url("https://20o8nn37v3mzb7unq3fsj61e-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/Project-management-tools-bad.jpg") no-repeat;
-    background-size: cover;
+#sec2-container::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
-#bg2 {
-    background: url("https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/project-managemnet-open-graph.jpg") no-repeat;
-    background-size: cover;
+#left-side {
+    width: 50%;
+    height: 550px;
+    background-color: gray;
+    float: left;
+    color: #fff;
 }
 
-#bg3 {
-    background: url("https://www.elegantthemes.com/blog/wp-content/uploads/2020/06/best-project-management-platforms-featured-image-scaled.jpg") no-repeat;
-    background-size: cover;
+#left-p > h2 {
+    text-align: left;
+    margin: 10px 5px;
 }
 
-.rec {
-    display: inline-block;
-    height: 62vh;
-    margin: 10px 20px 0 30px;
-    background-color: white;
-    border-radius: 10px;
+#left-p > p {
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+#right-side {
+    width: 48%;
+    height: 550px;
+    float: right;
+}
+
+.artical {
+    height: 31%;
+    margin-bottom: 20px;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    overflow: hidden;
+}
+
+#p1 {
+    background-image: url(https://20o8nn37v3mzb7unq3fsj61e-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/Project-management-tools-bad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#p2 {
+    background-image: url(https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/project-managemnet-open-graph.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#p3 {
+    background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2020/06/best-project-management-platforms-featured-image-scaled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#grid-container {
+    width: 100%;
+    margin: 15px auto;
+}
+
+#grid-container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid {
+    width: 20%;
+    float: left;
+    margin-left: 50px;
+    background-color: lightgrey;
+    border-radius: 8px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
-.imageContainer {
-    width: 280px;
-    height: 150px;
-    margin: 10px;
-
-}
-
-.imageContainer img {
+.grid > img {
     width: 100%;
-    height: 150px;
-    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.heading {
-    width: 280px;
+.grid > h4 {
+    margin: 0px 10px;
     text-align: center;
-    margin: 10px;
 }
 
-.heading h3 {
-    padding: 0;
-    margin: 0;
-}
-
-.summary {
-    /*width: 100%;*/
-    width: 280px;
+.grid > p {
     margin: 10px;
+    font-size: 15px;
     text-align: justify;
-    overflow: hidden;
-    height: 140px;
-}
-
-.summary p {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 20px;
-    margin-top: 5px;
-    line-height: 1.3;
-}
-
-.button {
-    width: 280px;
-    margin: 20px 10px;
-    text-align: center;
-    padding: 10px;
-    height: 35px;
-    border-radius: 10px;
-    background-color: red;
-    /*align-items: center;*/
-    /*justify-items: center;*/
-}
-
-.button a {
-    padding: 30px;
+    line-height: 25px;
     color: white;
-    line-height: 20px;
-    font-size: 20px;
-    font-family: "Segoe UI", serif;
-    text-decoration: none;
 }
 
-.button:hover {
+.grid > a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background-color: red;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.grid > a:hover {
     background-color: blue;
 }
 
-.footer {
-    height: 15vh;
-    background-color: rosybrown;
+#footer {
+    background-color: plum;
+    height: 100px;
+}
+
+#footer > p {
+    font-size: 16px;
+    color: black;
     text-align: center;
+    padding: 20px;
 }
 
-.footer p {
-    padding: 15px 0 0 0;
-}
-@media (min-width: 801px) and (max-width: 1200px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+
+@media (min-width: 801px) and (max-width: 1199px) {
+    .menu {
+        list-style: none;
+        float: right;
     }
 
-    .section {
-        /*color: black;*/
-        font-size: 30px;
-        /*text-align: center;*/
-        margin-top: 80px;
+    .menu li {
+        line-height: 70px;
+        display: inline-block;
     }
 
-    .header {
-        width: auto;
-        min-width: 801px;
-        max-width: 1270px;
-        line-height: 3vh;
-    }
-
-    .header ul li a {
+    .menu li a {
+        display: block;
         text-decoration: none;
         color: white;
-        font-size: 15px;
-        padding: 10px;
-        /*    overflow: hidden;*/
+        padding: 0px 20px;
+        font-size: 20px;
+        text-transform: uppercase;
     }
 
-    .header ul li a:hover {
+    .menu li a:hover {
         color: black;
         background-color: white;
-        border-radius: 100%;
     }
 
-
-    .banner {
-        height: 90vh;
-        /*background: url("https://cdn.pixabay.com/photo/2014/05/02/21/50/laptop-336378_960_720.jpg") no-repeat;*/
-        background-size: cover;
+    html {
+        scroll-padding-top: 70px;
+        scroll-behavior: smooth;
     }
 
-    .banner h1 {
-        font-size: 50px;
-        color: white;
-        /*margin: 20px 20px;*/
-        letter-spacing: 3px;
-    }
-
-    .circle {
-        display: inline-block;
-        margin: 20px 5% 10%;
-        height: 30vh;
-        border-radius: 100%;
-        background-color: lightgray;
-    }
-
-    .main-content {
-        /*background-color: gray;*/
-        height: 80vh;
-        width: 49%;
-        margin: 15px 10px;
-        /*padding: 10px;*/
-        overflow: no-display;
-    }
-
-    /*.main-content h2 {*/
-    /*    color: white;*/
-    /*    text-align: center;*/
-    /*}*/
-    .main-content p {
-        /*color: white;*/
-        /*line-height: 1.2;*/
-        font-size: 15px;
-        /*word-spacing: 5px;*/
-        /*text-align: justify;*/
-    }
-
-    .article {
-        /*float: right;*/
-        width: 46%;
-        margin: 15px 10px;
-        /*background-color: indianred;*/
-        height: 21vh;
-        /*text-align: center;*/
-    }
-
-    .article h2 {
-        /*font-weight: 700;*/
-        font-size: 25px;
-    }
-
-    .rec {
-        /*display: inline-block;*/
-        height: 47vh;
-        width: 270px;
-        margin: 20px 7% 0 7%;
-        /*background-color: white;*/
-        /*border-radius: 10px;*/
-        /*box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);*/
-    }
-
-    .imageContainer {
-        width: 90%;
-        height: 120px;
-        margin: auto;
-
-    }
-
-    .imageContainer img {
+    #container {
         width: 100%;
-        height: 100%;
-        border-radius: 10px;
     }
 
-    .heading {
-        width: 90%;
+    .show-btn,
+    .hide-btn,
+    #chk {
+        font-size: 30px;
+        line-height: 70px;
+        color: white;
+        display: none;
+        float: right;
+        padding-right: 20px;
+    }
+
+
+    #header {
+        width: 100%;
+        background-color: grey;
+        position: fixed;
+        top: 0;
+        height: 70px;
+    }
+
+
+    #banner {
+        width: 100%;
+        margin-top: 90px;
+        height: 680px;
+        margin-bottom: 15px;
+        display: flex;
+        font-size: 40px;
+        color: white;
+    }
+
+    #banner {
+        background-image: url(https://cdn.pixabay.com/photo/2014/05/02/21/50/laptop-336378_960_720.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #banner h2 {
+        margin: 20px 20px;
+        color: #fff;
+    }
+
+
+    #circle-container {
+        width: 100%;
+    }
+
+    #circle-container::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .circle img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        background-color: goldenrod;
+        float: left;
+        margin-left: 15%;
+        margin-bottom: 20px;
+    }
+
+    #sec2-container::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #left-side {
+        width: 50%;
+        height: 550px;
+        background-color: gray;
+        float: left;
+        color: #fff;
+    }
+
+    #left-p > h2 {
+        text-align: left;
+        margin: 10px 5px;
+    }
+
+    #left-p > p {
+        font-size: 20px;
+        padding: 10px;
+        text-align: justify;
+        line-height: 28px;
+    }
+
+    #right-side {
+        width: 48%;
+        height: 550px;
+        float: right;
+    }
+
+    .artical {
+        height: 31%;
+        margin-bottom: 20px;
+        background-color: chocolate;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        overflow: hidden;
+    }
+
+    #p1 {
+        background-image: url(https://20o8nn37v3mzb7unq3fsj61e-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/Project-management-tools-bad.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #p2 {
+        background-image: url(https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/project-managemnet-open-graph.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #p3 {
+        background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2020/06/best-project-management-platforms-featured-image-scaled.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #grid-container {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    #grid-container::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .grid {
+        width: 40%;
+        float: left;
+        margin-left: 65px;
+        margin-bottom: 20px;
+        background-color: lightgrey;
+        border-radius: 8px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .grid > img {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+
+    .grid > h4 {
+        margin: 0px 10px;
         text-align: center;
-        margin: auto;
     }
 
-    .heading h3 {
-        padding: 0;
-        margin: 0;
+    .grid > p {
+        margin: 10px;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 30px;
+        color: white;
     }
 
-    .summary {
-        /*width: 100%;*/
-        width: 90%;
-        margin: auto;
-        /*text-align: justify;*/
-        /*overflow: hidden;*/
-        height: 110px;
-    }
-
-    .summary p {
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 15px;
-        /*margin-top: 5px;*/
-        line-height: 1.3;
-    }
-
-    .button {
-        width: 90%;
-        margin: 15px;
-        /*text-align: center;*/
-        /*padding: 10px;*/
-        height: 35px;
-        /*border-radius: 10px;*/
-        /*background-color: red;*/
-        /*align-items: center;*/
-        /*justify-items: center;*/
-    }
-
-    .button a {
-        padding: 5px 14px;
-        /*color: white;*/
-        /*line-height:;*/
-        font-size: 18px;
-        /*font-family: "Segoe UI", serif;*/
-        /*text-decoration: none;*/
-    }
-
-    /*.button:hover {*/
-    /*    background-color: blue;*/
-    /*}*/
-    .footer {
-        height: 10vh;
-        background-color: rosybrown;
+    .grid > a {
+        display: block;
+        margin: 0 auto;
         text-align: center;
+        color: #fff;
+        background-color: red;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 8px;
     }
 
-    .footer > p {
-        padding: 10px 0 0 0;
+    h1 {
+        color: black;
+        font-size: 40px;
+        text-align: center;
+        padding: 25px 0px;
+    }
+
+    .grid > a:hover {
+        background-color: blue;
+    }
+
+    #footer {
+        background-color: plum;
+        height: 100px;
+    }
+
+    #footer > p {
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        padding: 20px;
     }
 }
 
 
+@media (max-width: 800px) {
+    #header {
+        width: 100%;
+        background-color: grey;
+        position: fixed;
+        top: 0;
+        height: 70px;
+    }
+
+    .show-btn {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        padding: 80px 0px;
+        line-height: normal;
+        transition: 0.7s;
+    }
+
+    .menu li {
+        display: block;
+    }
+
+    .manu li a {
+        display: block;
+    }
+
+    #chk:checked ~ .menu {
+        right: 0;
+    }
+
+    .hide-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    #banner {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 15px;
+        display: flex;
+        font-size: 30px;
+        color: white;
+        margin-top: 90px;
+    }
+
+    #banner h2 {
+        margin: 10px 20px;
+        color: #fff;
+    }
+
+    #circle-container {
+        width: 100%;
+    }
+
+    #circle-container::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .circle img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+
+    #left-side {
+        width: 100%;
+        height: 200px;
+        background-color: gray;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    #left-p > h2 {
+        text-align: left;
+        margin: 5px 5px;
+    }
+
+    #left-p > p {
+        font-size: 20px;
+        padding: 10px;
+        text-align: justify;
+        line-height: 28px;
+    }
+
+    #right-side {
+        width: 100%;
+        height: 400px;
+    }
+
+    .artical {
+        height: 31%;
+        margin-bottom: 20px;
+        background-color: chocolate;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        overflow: hidden;
+    }
+
+    #p1 {
+        background-image: url(https://20o8nn37v3mzb7unq3fsj61e-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/Project-management-tools-bad.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #p2 {
+        background-image: url(https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/project-managemnet-open-graph.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #p3 {
+        background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2020/06/best-project-management-platforms-featured-image-scaled.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #grid-container {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    #grid-container::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .grid {
+        width: 40%;
+        float: left;
+        margin-left: 50px;
+        background-color: lightgrey;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .grid > img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .grid > h4 {
+        margin: 0px 10px;
+        text-align: center;
+    }
+
+    .grid > p {
+        margin: 10px;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 25px;
+        color: white;
+    }
+
+    .grid > a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        background-color: red;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    h1 {
+        color: black;
+        font-size: 40px;
+        text-align: center;
+        padding: 25px 0px;
+    }
+
+
+    @media (max-width: 625px) {
+
+        #container {
+            min-width: 320px;
+        }
+
+        .show-btn {
+            display: block;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            background-color: #333;
+            text-align: center;
+            padding: 80px 0px;
+            line-height: normal;
+            transition: 0.7s;
+        }
+
+        .menu li {
+            display: block;
+        }
+
+        .manu li a {
+            display: block;
+        }
+
+        #chk:checked ~ .menu {
+            right: 0;
+        }
+
+        .hide-btn {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+
+        #banner {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 15px;
+            color: white;
+            margin-top: 90px;
+        }
+
+        #banner h2 {
+            margin: 10px 20px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        #circle-container {
+            width: 90%;
+            margin-left: 10%;
+        }
+
+        .circle img {
+            height: 70%;
+            width: 70%;
+
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        #left-side {
+            width: 100%;
+            height: 200px;
+            background-color: gray;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        #left-p > h2 {
+            text-align: left;
+            margin: 5px 5px;
+        }
+
+        #left-p > p {
+            font-size: 20px;
+            padding: 10px;
+            text-align: justify;
+            line-height: 28px;
+        }
+
+        #right-side {
+            width: 100%;
+            height: 400px;
+        }
+
+        .artical {
+            box-sizing: border-box;
+            height: 31%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            overflow: hidden;
+        }
+
+        #p1 {
+            background-image: url(https://20o8nn37v3mzb7unq3fsj61e-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/Project-management-tools-bad.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #p2 {
+            background-image: url(https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/project-managemnet-open-graph.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #p3 {
+            background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2020/06/best-project-management-platforms-featured-image-scaled.jpgF);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #grid-container {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .grid {
+            margin-left: 20px;
+            width: 90%;
+            background-color: lightgrey;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+            max-height: 500px;
+        }
+
+        .grid > img {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+
+        .grid > h4 {
+            margin: 0px 10px;
+            text-align: center;
+        }
+
+        .grid > p {
+            margin: 10px;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 25px;
+            color: white;
+        }
+
+        .grid > a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            background-color: red;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 15px;
+        }
+    }
+}
