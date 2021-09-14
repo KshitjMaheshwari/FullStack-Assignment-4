@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2f3640;
+    height: 10vh;
+}
+
+.header img {
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+}
+
+.header h1 {
+    color: white;
+    line-height: 10vh;
+}
+
+
+.show-btn, .hide-btn {
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    top: 25px;
+    left: 50px;
+}
+
+.hide-btn {
+    opacity: 0;
+}
+
+#chk {
+    display: none;
+}
+
+#chk:checked ~.sidebar {
+    left: 0;
+    /*transition: 0.5s;*/
+}
+#chk:checked ~.show-btn {
+    opacity: 0;
+}
+
+#chk:checked ~.hide-btn {
+    opacity: 1;
+    /*transition: 0.7s;*/
+}
+
+#chk:checked ~.content {
+    width: 80%;
+}
+
+.sidebar {
+    left: -100%;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 70px;
+    background: #353b48;
+    transition: 0.7s;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar ul li {
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s;
+}
+a i span {
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+a i {
+    font-size: 20px;
+}
+
+.social {
+    margin-top: 340px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    border-top: 2px solid rgba(255,255,255,0.1);
+    padding: 15px 25px;
+}
+
+.social a i {
+    color: white;
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.sidebar ul li a:hover {
+    border-left: 10px solid white;
+}
+
+.content {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    transition: 0.7s;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.content img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.content img {
+    width: 700px;
+    height: 500px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.content p {
+    text-align: justify;
+    word-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header h1{
+        display: none;
+    }
+}
