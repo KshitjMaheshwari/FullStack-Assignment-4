@@ -183,11 +183,14 @@ i {
     justify-content: center;
     background-color: black;
     padding: 30px;
+    /*text-align: center;*/
+    align-items: center;
 }
 
 .sec-4 p {
     color: grey;
     position: relative;
+    /*text-align: center;*/
 }
 
 .sec-4 p::after {
@@ -247,6 +250,10 @@ hr {
 }
 
 @media (max-width: 492px) {
+    .about h2{
+        text-align: center;
+    }
+
     .link-container {
         display: flex;
         flex-direction: column;
@@ -328,7 +335,7 @@ hr {
     }
 
     .sec-4 {
-        padding: 0;
+        padding: 20px 0;
     }
 
     .sec-4 p{
