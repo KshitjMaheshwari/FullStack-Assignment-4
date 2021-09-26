@@ -23,8 +23,8 @@ footer {
 .sec-1 {
     display: flex;
     /*flex-direction: row;*/
-    justify-content: space-between;
-    padding: 30px 10px;
+    justify-content: space-around;
+    padding: 30px 0;
 }
 
 
@@ -46,28 +46,29 @@ footer {
 .about {
     /*width: 40%;*/
     /*flex-direction: column;*/
-    flex: 0.7;
+    flex: 0.6;
     margin-right: 20px;
 }
 
 .link-container {
     display: flex;
     flex: 1;
+    justify-content: space-around;
 }
 
 .link1 {
-    flex-direction: column;
-    flex: 1;
+    /*flex-direction: column;*/
+    /*flex: 1;*/
 }
 
 .link2 {
-    flex-direction: column;
-    flex: 1;
+    /*flex-direction: column;*/
+    /*flex: 1;*/
 }
 
 .link3 {
-    flex-direction: column;
-    flex: 1;
+    /*flex-direction: column;*/
+    /*flex: 1;*/
 }
 
 
@@ -229,19 +230,19 @@ hr {
     }
 
     .link3  i {
-        display: none;
+        /*display: ;*/
     }
 
     .link1 {
-        transform: translateX(-20px);
+        transform: translateX(-10px);
     }
 
     .link2 {
-        transform: translateX(-20px);
+        transform: translateX(-10px);
     }
 
     .link3 {
-        transform: translateX(-20px);
+        transform: translateX(-10px);
     }
 }
 
