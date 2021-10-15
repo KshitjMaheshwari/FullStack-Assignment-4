@@ -1,10 +1,10 @@
 var counter = 0;
 var x = document.getElementById("text");
+var button = document.getElementsByTagName("button");
 
 function fun() {
     counter++;
     x.innerHTML = counter;
-
 }
 
 function fun1() {
