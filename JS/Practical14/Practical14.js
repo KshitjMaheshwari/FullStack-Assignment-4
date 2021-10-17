@@ -1,7 +1,9 @@
 var counter = 0;
 var x = document.getElementById("text");
 
-function fun() {
+
+function fun()
+{
     counter++;
     x.innerHTML = counter;
 }
@@ -10,6 +12,9 @@ function fun1() {
     counter--;
     if (counter <= 0) {
         counter = 0;
+    }
+    if (counter === 0) {
+        document.getElementById("minus").style.borderColor = "lightgrey";
     }
     x.innerHTML = counter;
 }
